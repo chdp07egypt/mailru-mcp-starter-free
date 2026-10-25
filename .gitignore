@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: Apache-2.0
+.env
+.env.*
+!.env.example
+.venv-public/
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.eml
+*.mbox
+*.log
+*.zip
+*.pem
+*.key
+credentials*.json
+token*.json
+
