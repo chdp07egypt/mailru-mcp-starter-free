@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "mailru": {
+      "url": "https://YOUR-SERVICE.onrender.com/mcp",
+      "auth": {
+        "type": "oauth",
+        "client": { "mode": "dcr" },
+        "baseScopes": ["mail.access"],
+        "defaultScopes": ["mail.access"],
+        "authorizationUrl": "https://YOUR-SERVICE.onrender.com/oauth/authorize",
+        "tokenUrl": "https://YOUR-SERVICE.onrender.com/oauth/token",
+        "registrationUrl": "https://YOUR-SERVICE.onrender.com/oauth/register",
+        "resource": "https://YOUR-SERVICE.onrender.com/mcp"
+      }
+    }
+  }
+}
