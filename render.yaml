@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: Apache-2.0
+services:
+  - type: web
+    name: mailru-mcp
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT --no-access-log
+    healthCheckPath: /healthz
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.10
+      - key: MCP_ACCESS_TOKEN
+        generateValue: true
+      - key: MAILRU_USER
+        sync: false
+      - key: MAILRU_APP_PASSWORD
+        sync: false
+
