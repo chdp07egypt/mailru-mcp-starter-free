@@ -1,0 +1,17 @@
+Mail.ru MCP starter
+
+Public adaptation of the author's personal Mail.ru integration, 2026-10-25.
+The public adaptation uses configurable deployment origins and a single
+explicit mail.access grant. It contains no personal token-migration policy.
+
+The repository LICENSE is Mozilla Public License 2.0, selected by the owner.
+New documentation, examples, CI, .env.example, requirements-dev.txt and
+scripts/check_public.py are provided under MPL-2.0.
+
+The inherited and adapted implementation files server.py, oauth.py,
+mailbox_client.py, tests/test_mail.py, tests/test_oauth.py, requirements.txt,
+render.yaml and .gitignore retain Apache-2.0. See LICENSE-APACHE-2.0.
+Their modifications are identified in this NOTICE and public source history.
+
+Mail.ru, Google, ChatGPT and Render are names of their respective providers.
+This project is an independent example, not an official integration.
